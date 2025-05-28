@@ -25,7 +25,6 @@ echo " you have the super user access......"
 fi
 
 dnf list installed mysql 
-echo " The status of mysqlstatus $? "
 mysqlstatus=$?
 echo " The  mysqlstatus is  $mysqlstatus "
 validate $mysqlstatus
