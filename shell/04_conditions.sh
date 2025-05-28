@@ -23,7 +23,7 @@ else
 echo " you have the super user access......"
 fi
 
-dnf list installed mysql -y 
+dnf list installed mysql 
 echo " The status of mysqlstatus $? "
 mysqlstatus=$?
 
