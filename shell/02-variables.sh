@@ -19,7 +19,7 @@ read -s surname
 
 echo " the Third person surname is $surname "
 
-FRUITS=("APPLE","GRAPES")
+FRUITS=("APPLE" "GRAPES")
 echo " The fruits Names are ${FRUITS[0]}"
 echo " The fruits Names are ${FRUITS[1]}"
 echo " The fruits Names are ${FRUITS[@]}"
