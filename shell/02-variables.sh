@@ -1,27 +1,23 @@
 #! bin/bash
-Person1='Sankar'
-Person2='juvva'
 
-Name=$Person1
-Surname=$Person2
-echo " The Person Name is :: ${Person1} "
-echo  " The Person surname is $Person2  "
+PARAM1="SANKAR"
+PARAM2="JUVVA"
 
+echo " The Name is ${PARAM1}"
+echo " The surname is $PARAM2"
 
-echo 'Read the person name is from command prompt'
-read Person3
+NAME=$1
+SURNAME=$2
 
-echo "The Third person Name is $Person3"
+echo " Read the values from cmd line "
+read username
+echo " UserName is :: $username "
 
-echo 'Read the Third person surname name without visable'
+echo " Read the password from cmd line "
+read -s password
+echo " the password is ${password}"
 
-read -s surname
-
-echo " the Third person surname is $surname "
-
-FRUITS=("APPLE" "GRAPES")
-echo " The fruits Names are ${FRUITS[0]}"
-echo " The fruits Names are ${FRUITS[1]}"
-echo " The fruits Names are ${FRUITS[@]}"
-
-
+CARDS=("CREDIT" "DEBIT" "FOREX")
+echo " THE CARDS ARE  ${CARDS[0]} "
+echo " THE CARDS ARE  ${CARDS[1]} "
+echo " THE CARDS ARE  ${CARDS[2]} "
