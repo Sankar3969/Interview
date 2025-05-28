@@ -2,6 +2,7 @@
 USERID=$(id -u)
 
 validate(){
+    echo " the stats is :  $1"
     if [ $1 -ne 0 ]
     then
     echo " mysql  is not installed ! Please installing now"
