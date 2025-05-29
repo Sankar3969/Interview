@@ -23,7 +23,7 @@ echo "validating the user"
 VALIDATE
 
 FRUITS=("APPLE" "GRAPES" "MANGO")
-while IFS= read -r line;
+while IFS= readLine -r line;
 do
 echo " THE fruits are from while $line"
 done <<< $FRUITS
