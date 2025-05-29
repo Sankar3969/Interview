@@ -23,10 +23,11 @@ echo "validating the user"
 VALIDATE
 
 FRUITS=("APPLE" "GRAPES" "MANGO")
-while IFS= read -r line;
-do
-echo " THE fruits are from while $line"
-done <<<  "${FRUITS[@]}"
+while [ $i -lt ${#FRUITS[@]} ]; do
+  line=${FRUITS[$i]}
+  echo "THE fruits are from while: $line"
+  ((i++))
+done
 
 for line in "${FRUITS[@]}"
 do
