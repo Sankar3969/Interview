@@ -26,5 +26,7 @@ fi
 
 dnf list installed mysql 
 mysqlstatus=$?
+if [ $mysqlstatus -ne 0]
+then
 echo " The  mysqlstatus is  $mysqlstatus "
 validate $mysqlstatus
