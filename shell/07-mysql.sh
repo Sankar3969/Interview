@@ -22,8 +22,6 @@ INSSTATUS(){
 echo "validating the super user"
 VALIDATE
 
-SERVER
-
 dnf list installed mysql_server
 mysqlstatus=$?;
 echo "mysql server status is $mysqlstatus "
@@ -32,7 +30,7 @@ if [ $mysqlstatus -ne 0 ]
 then
 echo "mysql server not installed!  going to install"
 
-dnf install mysql_server -y
+dnf install mysql-server -y
 
 INSSTATUS $? "mysql_server"
 else
