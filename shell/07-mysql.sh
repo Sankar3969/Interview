@@ -22,7 +22,7 @@ INSSTATUS(){
 echo "validating the super user"
 VALIDATE
 
-dnf list installed mysql_server
+dnf list installed mysql-server
 mysqlstatus=$?;
 echo "mysql server status is $mysqlstatus "
 
