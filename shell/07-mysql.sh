@@ -42,3 +42,6 @@ INSSTATUS $? "mysqld enabled"
 
 systemctl start mysqld
 INSSTATUS $? "mysqld start"
+
+mysql_secure_installation --set-root-pass ExpenseApp@1
+INSSTATUS $? "mysql password setting done successfully"
