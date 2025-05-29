@@ -23,6 +23,16 @@ VALIDATE(){
 echo "validating the user"
 VALIDATE
 
+FRUITS=$("APPLE""GRAPES""MANGO")
+while IFS= read -r line;
+do
+echo " THE fruits are from while $line"
+done <<< $FRUITS
+
+for line in $FRUITS
+do
+echo "The fruits are from for  $line"
+done 
 
 
 
